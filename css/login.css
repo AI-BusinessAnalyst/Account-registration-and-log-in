@@ -1,0 +1,234 @@
+/* general styling for fonts used */
+body {
+  	font: 9pt/1.5 "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+	background-color: #ccc;
+}
+/* style for page wrap */
+#container {
+	width: 900px;
+	min-height: 700px;
+	max-height: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	background-color: #f7dede;		
+	overflow: auto;
+}
+/* style for heading division - includes h1 and nav bar*/
+.heading {
+	border-bottom: solid thin #222;
+	float: left;
+	width: 100%;
+	padding: 0;
+}
+
+h1 {
+	text-align: left;
+	float: left;
+/*	margin-right: 440px;	*/
+	padding: 0;
+}
+
+#navigation {
+	padding:  0;
+	float: left;
+	width: 360px;
+	margin: 25px 0 0 0;
+}
+
+#navigation li {
+	display: inline;
+	list-style-type: none;
+}
+
+#navigation li a{
+	font: 120%/1 Verdana, Arial, sans-serif;
+	float: left;
+	line-height: 15px;
+	font-weight:bold;
+	margin: 0 20px 4px 5px;
+	text-decoration:none;
+	color:#506eee;	
+}
+
+#navigation a:link{
+	padding-bottom: 2px;
+	color: #0046af;
+}
+
+#navigation a:visited {
+	padding-bottom: 2px;
+	color: #00248f;	
+}
+
+#navigation a:hover, #navigation a:active{
+	border-bottom: 4px solid #00248f;
+	padding-bottom: 2px;
+	color: #00248f;
+}
+
+#login {
+    padding:  0;
+	float: right;
+    margin-right:20px;
+}
+
+#login li {
+	display: inline;
+	list-style-type: none;
+}
+
+#login li a{
+    font-size:16px;
+    font-weight:bold;
+    text-decoration:none;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.current {
+	border-bottom: 4px solid #2268cf;
+	padding-bottom: 2px;
+	color: #00248f;
+}
+
+
+/*style of columns */
+#leftcol {
+	width: 50%;
+	float: left;
+	padding: 0;
+	margin-right: 20px;
+}
+
+/* form styling */
+form {
+	float: left;
+	font-size: 1em;
+/*	width: 400px;	*/
+}
+input[type="submit"]{
+	width:230px;
+	margin:2px 50px 50px 23px;
+	background-color: #ff69b4;
+}
+/* fieldset styling */
+fieldset {
+	width:360px;
+	margin: 1em 2em;   /*  this spaces out the fieldsets a little*/
+	padding: 1em;
+	border: 1px solid #ccc;
+	background-color:#ffe7fc;
+}
+
+
+
+
+/* legend styling */
+ legend {
+	font-weight: bold;
+}
+
+form p {
+	position: relative;
+	width: 100%;
+	float: left;
+	margin: 0 0 1% 0;
+}
+
+/* style for  labels */
+label {
+	float: left;
+	width: 10em;
+	padding-top: 4px;
+}
+
+input[type="text"], textarea, input[type="password"] {
+	border-top: 2px solid #999;
+	border-left: 2px solid #999;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	width: 200px;
+	padding: 4px;
+	
+}
+
+/* style form elements on focus */
+input:focus, select:focus {
+	background: #ffc;
+}
+
+/* error messages */
+.error {
+	clear: both;
+	color: #700;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+.error-message {
+	color:red;
+	font-weight: bold;
+	margin-bottom:1px;
+/*	margin-left:10em;	*/
+}
+
+/* success messages */
+.success {
+	clear: both;
+	color: #000;
+	font-size: 100%;
+	font-weight: bold;
+}
+
+.required {
+	color:  #700;
+}
+
+/* clearing floats */
+hr {	
+	clear:both; 
+	visibility: hidden;
+}
+
+/* 1 column in responsive design */
+@media screen and (max-width:767px) {
+body {
+	margin:0;
+}
+#container {
+	width: 97%;		
+	
+}
+h1, ul {
+	text-align: center;
+	float:none;
+	margin: 0 auto;
+	padding:0;
+}
+#login{
+	float:none;
+	margin:0;
+}
+form {
+	width: 90%;
+	margin:0 auto;
+	padding:0;
+	float:none;
+}
+fieldset {
+	width:90%;
+	float: none;
+	text-align:justify;
+	margin:3% auto;
+	}
+	
+input[type="text"], textarea, input[type="password"] {
+	width: 96%;
+	
+}
+input[type="submit"]{
+	width:97%;
+	margin:3% 1.5%;
+	}
+}
